@@ -272,7 +272,7 @@ console.log(Immutable.is(map1, map2));
 
 ## isSubset()
 
-```
+```javascript
 const map1 = Immutable.Map({a:1, b:1});
 const map2 = Immutable.Map({a:1, b:1, c:3});
     
@@ -288,9 +288,9 @@ console.log(map2.isSubset(map1));
 const map1 = Immutable.Map({a:1, b:1});
 const map2 = Immutable.Map({a:1, b:1, c:3});
     
-expect(map2.isSuperset(map1));
+console.log(map2.isSuperset(map1));
 //true
-expect(map1.isSuperset(map2));
+console.log(map1.isSuperset(map2));
 //false
 ```
 
